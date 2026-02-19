@@ -1,0 +1,56 @@
+SELECT
+  ActivityDate,
+  TotalSteps,
+  Calories
+FROM `bellabeat-case-study-487822.bellabeat_data.daily_activity`
+LIMIT 10;
+
+CREATE OR REPLACE TABLE `bellabeat-case-study-487822.bellabeat_data.activity_cleaned` AS
+
+WITH base AS (
+  SELECT
+    Id,
+    DATE(ActivityDate) AS activity_date,
+    TotalSteps,
+    Calories,
+    VeryActiveMinutes,
+    FairlyActiveMinutes,
+    LightlyActiveMinutes,
+    SedentaryMinutes
+  FROM `bellabeat-case-study-487822.bellabeat_data.daily_activity`
+)
+
+SELECT
+  *,
+  FORMAT_DATE('%A', activity_date) AS day_of_week,
+  
+  CASE
+    WHEN TotalSteps < 5000 THEN 'Sedentary'
+    WHEN TotalSteps BETWEEN 5000 AND 9999 THEN 'Moderately Active'
+    ELSE 'Active'
+  END AS activity_level
+
+FROM base;
+
+SELECT
+  activity_level,
+  COUNT(*) AS total_days,
+  ROUND(AVG(TotalSteps),0) AS avg_steps
+FROM `bellabeat-case-study-487822activity_level, activity_level, activity_level.bellabeat_data.activity_cleaned`
+GROUP BY activity_level
+ORDER BY total_days DESC;
+
+WITH user_avg AS (
+  SELECT
+    Id,
+    AVG(TotalSteps) AS avg_user_steps
+  FROM `bellabeat-case-study-487822.bellabeat_data.activity_cleaned`
+  GROUP BY Id
+)
+
+SELECT
+  FORMAT_DATE('%A', DATE(ActivityDate)) AS day_of_week,
+  ROUND(AVG(TotalSteps),0) AS avg_steps
+FROM `bellabeat-case-study-487822.bellabeat_data.daily_activity`
+GROUP BY day_of_week
+ORDER BY avg_steps ASC;
