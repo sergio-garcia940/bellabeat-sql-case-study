@@ -141,9 +141,14 @@ Personalized engagement strategies
 Retention-focused marketing
 
 Data-driven segmentation
-
 Product feature development
 
 Conclusion
-
 The analysis reveals actionable patterns in user behavior that can support strategic growth initiatives. By leveraging activity segmentation and behavioral timing insights, Bellabeat can enhance user engagement and optimize its marketing strategy.
+
+## 🔮 Future Improvements
+
+- Incorporate sleep data for deeper behavioral insights  
+- Apply window functions to analyze user trends over time  
+- Develop a dashboard in Looker Studio  
+- Expand dataset with larger sample size for better representativeness  
