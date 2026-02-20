@@ -1,4 +1,4 @@
-# bellabeat-sql-case-study
+# Bellabeat Smart Device Analysis (SQL | BigQuery)
 Análisis SQL de datos de dispositivos inteligentes Fitbit con BigQuery para generar información de marketing para Bellabeat.
 Bellabeat Case Study – SQL Analysis (BigQuery)
  Project Overview
