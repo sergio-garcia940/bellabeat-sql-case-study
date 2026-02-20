@@ -151,4 +151,9 @@ The analysis reveals actionable patterns in user behavior that can support strat
 - Incorporate sleep data for deeper behavioral insights  
 - Apply window functions to analyze user trends over time  
 - Develop a dashboard in Looker Studio  
-- Expand dataset with larger sample size for better representativeness  
+- Expand dataset with larger sample size for better representativeness
+
+## 👤 Author
+
+Sergio Andres Garcia Peña  
+Data Analyst | SQL | BigQuery  
