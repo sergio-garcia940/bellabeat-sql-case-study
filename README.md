@@ -1,4 +1,8 @@
 # Bellabeat Smart Device Analysis (SQL | BigQuery)
+![SQL](https://img.shields.io/badge/SQL-BigQuery-blue)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
+
 Análisis SQL de datos de dispositivos inteligentes Fitbit con BigQuery para generar información de marketing para Bellabeat.
 Bellabeat Case Study – SQL Analysis (BigQuery)
  Project Overview
