@@ -157,3 +157,7 @@ The analysis reveals actionable patterns in user behavior that can support strat
 
 Sergio Andres Garcia Peña  
 Data Analyst | SQL | BigQuery  
+
+### 📊 Weekly Activity Visualization (R)
+
+![Weekly Steps](screenshots/weekly_steps.png)
